@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchCard() {
+function SearchCards() {
   return (
     <div className="card border-primary mb-3" /* style="max-width: 18rem;" */>
     <div className="card mb-3">
@@ -10,9 +10,11 @@ function SearchCard() {
           <h5 className="card-title">Book Title</h5>
           <h4 className="card-title">Book Subtitle</h4>
           <h4 className="card-title">Author Name</h4>
-          <div>
+          <div className="mb-5">
           <img className="card-img-top" src="..." alt="Card image cap"></img>
-          <p className="card-text">Description</p>
+        </div>
+        <div>
+        <p className="card-text">Description</p>
         </div>
       </div>
     </div>
@@ -20,4 +22,4 @@ function SearchCard() {
 );
 }
 
-export default SearchCard; 
+export default SearchCards; 

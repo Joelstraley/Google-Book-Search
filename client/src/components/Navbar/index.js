@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Nav() {
+function Navbar() {
   return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -43,4 +44,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navbar;
