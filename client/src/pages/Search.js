@@ -65,6 +65,12 @@ class Search extends Component  {
   //HandleForm Submit 
 
 render() {
+    let books = this.state.result;
+    console.log(books)
+  /*   let booksInfo = books.map(book => {
+        console.log(book.volumeInfo)
+    } )  */
+ 
 return (
     <Container fluid>
       <Row>
@@ -80,11 +86,9 @@ return (
                 handleFormSubmit={this.handleFormSubmit}
                 />
             <SearchCards
-                        title={this.state.result}
-                        src={this.state.result.Poster}
-                        director={this.state.result.Director}
-                        genre={this.state.result.Genre}
-                        released={this.state.result.Released}
+                        title={this.state.title}
+                        subtitle={this.state.result.subtitle}
+                  
                       />
           </Col>
         </Row>
