@@ -88,7 +88,7 @@ return (
                  subtitle={book.volumeInfo.subtitle}
                  description={book.volumeInfo.description}
                  author={book.volumeInfo.authors}
-                 image={book.volumeInfo}
+                 image={book.volumeInfo.imageLinks.thumbnail}
                  databaseSave={this.databaseSave}
                />
             ))} 

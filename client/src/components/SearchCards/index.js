@@ -10,8 +10,8 @@ function SearchCards(props) {
                   <h4 className="card-title">{props.subtitle}</h4>  
             <div className="col-6">
               
-                  <button>VIEW - LINK to GOOGLE BOOKS PAGE</button>
-                <button onClick={event => props.databaseSave(props.title, props.subtitle, props.description)}>SAVE - </button>
+                  <button className="button">view</button>
+                <button className="button" onClick={event => props.databaseSave(props.title, props.subtitle, props.description)}>save</button>
                 </div>
                 </div>
           <div className="card-body col-6">

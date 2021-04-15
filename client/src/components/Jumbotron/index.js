@@ -4,8 +4,8 @@ import React from "react";
 function Jumbotron({ children }) {
     return (
       <div
-        style={{ height: 150, clear: "both", paddingTop: 30, textAlign: "center" }}
-        className="jumbotron"
+        style={{ height: 115, clear: "both", paddingTop: 10, marginTop: 20, textAlign: "center" }}
+        className="jumbotron" id="jumbo"
       >
         {children}
       </div>
