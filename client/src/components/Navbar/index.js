@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar(props) {
   return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark top" >
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark top" style={{boxShadow: "2px 2px 2px 2px black", marginTop: 5}}> 
         <div className="container-fluid" id="nav">
             <Link className="navbar-brand" href="#">Google Books
             </Link>
@@ -14,7 +14,7 @@ function Navbar(props) {
             <ul className="navbar-nav">
                 <li className="nav-item">
                 <Link
-              to="/"
+              to="/Search"
               className={
                 window.location.pathname === "/Search" || window.location.pathname === "/Search"
                   ? "nav-link active"

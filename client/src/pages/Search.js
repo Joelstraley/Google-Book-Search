@@ -7,28 +7,16 @@ import SearchCards from "../components/SearchCards";
 import SearchBar from "../components/SearchBar";
 
 
-
-
 class Search extends Component  {
-
-/*       // Setting our component's initial state
-  const [books, setBooks] = useState([])
-
-  // Load all books and store them with setBooks
-  useEffect(() => {
-    loadBooks()
-  }, []) */
 
   state = {
       result: [],
-      images: [],
       search: ""
   };
 
   componentDidMount() {
     this.searchBooks("Catch-22");
   }
-
 
   searchBooks = query => {
     API.search(query)
@@ -44,12 +32,15 @@ class Search extends Component  {
     });
   };
 
-databaseSave = (title, subtitle, description) => {
-    console.log(title, subtitle, description)
+databaseSave = (title, subtitle, description, author, image, link) => {
+    console.log(title, subtitle, description, author, image, link)
     let bookInfo = {
         title,
         subtitle,
-        description
+        description,
+        author,
+        image,
+        link
     }
       fetch("localhost:3001/books", {
         method: "POST", 
@@ -60,8 +51,6 @@ databaseSave = (title, subtitle, description) => {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    console.log(this.state.result)
-    console.log(this.state.images)
     this.searchBooks(this.state.search);
   };
 
@@ -89,6 +78,7 @@ return (
                  description={book.volumeInfo.description}
                  author={book.volumeInfo.authors}
                  image={book.volumeInfo.imageLinks.thumbnail}
+                 link={book.volumeInfo.infoLink}
                  databaseSave={this.databaseSave}
                />
             ))} 

@@ -3,7 +3,7 @@ import React from "react";
 function SearchBar(props) {
   return (
 
-    <nav className="navbar navbar-dark bg-dark" id="searchBar">
+    <nav className="navbar navbar-dark bg-dark" id="searchBar" style={{boxShadow: "2px 2px 2px 2px black"}}>
     <form className="form-inline" style={{ textAlign: "center"}}>
         <input    
           onChange={props.handleInputChange}

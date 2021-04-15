@@ -4,7 +4,7 @@ body {
 }
 
 #nav { 
-  background-color: hsl(215, 100%, 50%);
+  background-color:hsl(180, 96%, 46%); 
   border-radius: 5px 5px 5px 5px;
 }
 .top {
@@ -15,19 +15,37 @@ body {
 }
 h1, h3 {
   font-family: 'Montserrat Subrayada', sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+li, h4, h5, p, button, a, input {
+  font-family: 'Lora', serif;
 }
 
 #jumbo {
-  
   background-color: #4D90F5;
 }
 
+
 #searchBar {
-  background-color: black;
+  background-color:hsl(180, 96%, 46%); 
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 10px;
   margin-top: -20px;
   justify-content: center;
+}
+
+#cards {
+  background-color:hsl(180, 96%, 46%); 
+  border-radius: 2px 2px 2px 2px;
+}
+
+button {
+  padding: auto;
+  margin: 10px;
+  background-color:hsl(180, 96%, 46%); 
+  border-style: inset;
 }
 
 .App {
