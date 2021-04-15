@@ -21,6 +21,7 @@ class Search extends Component  {
 
   state = {
       result: [],
+      images: [],
       search: ""
   };
 
@@ -57,10 +58,10 @@ databaseSave = (title, subtitle, description) => {
 }
 
 
-  // When the form is submitted, search the OMDB API for the value of `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
     console.log(this.state.result)
+    console.log(this.state.images)
     this.searchBooks(this.state.search);
   };
 
@@ -86,6 +87,8 @@ return (
                  title={book.volumeInfo.title}
                  subtitle={book.volumeInfo.subtitle}
                  description={book.volumeInfo.description}
+                 author={book.volumeInfo.authors}
+                 image={book.volumeInfo}
                  databaseSave={this.databaseSave}
                />
             ))} 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -16,19 +16,19 @@ function Navbar() {
                 <Link
               to="/"
               className={
-                window.location.pathname === "/" || window.location.pathname === "/"
+                window.location.pathname === "/Search" || window.location.pathname === "/Search"
                   ? "nav-link active"
                   : "nav-link"
               }
             >
               Search
-            </Link>      
+            </Link >      
             </li>     
                 <li className="nav-item">
                 <Link
-              to="/"
+              to="/Saved"
               className={
-                window.location.pathname === "/" || window.location.pathname === "/Saved"
+                window.location.pathname === "/Saved" || window.location.pathname === "/Saved"
                   ? "nav-link active"
                   : "nav-link"
               }
