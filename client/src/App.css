@@ -23,6 +23,10 @@ li, h4, h5, p, button, a, input {
   font-family: 'Lora', serif;
 }
 
+h4, h5, p {
+  color: black;
+}
+
 #jumbo {
   background-color: #4D90F5;
 }
