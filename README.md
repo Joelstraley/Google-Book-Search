@@ -1,29 +1,48 @@
-# Create React Express App
+# Google Books Search [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-## About This Boilerplate
+## Description
+Search the Google Books API then save and delete entries. 
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+[View Live Site](https://google-books-react-straley.herokuapp.com/)
+## Table of Contents
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+* [Technologies](#Technologies)
+* [Questions](#Questions)
+* [License](#License)
 
-## Starting the app locally
+Screenshot: 
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+![alt text](https://raw.githubusercontent.com/Joelstraley/Google-Book-Search/main/client/Google%20Books%20Search.png)
 
-```
-npm install
-```
+## <a name="Technologies">Technologies:</a>
+React, React-router, Bootstrap, Express, MongoDB, Heroku
 
-This should install node modules within the server and the client folder.
+## <a name="Questions">Questions</a>
+For questions please reach out to [github.com/JoelStraley](github.com/JoelStraley) 
+or email me at [JoelStraley@gmail.com](mailto:JoelStraley@gmail.com)
 
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+## <a name="License">License</a>
+This is free and unencumbered software released into the public domain.
+    
+            Anyone is free to copy, modify, publish, use, compile, sell, or
+            distribute this software, either in source code form or as a compiled
+            binary, for any purpose, commercial or non-commercial, and by any
+            means.
+            
+            In jurisdictions that recognize copyright laws, the author or authors
+            of this software dedicate any and all copyright interest in the
+            software to the public domain. We make this dedication for the benefit
+            of the public at large and to the detriment of our heirs and
+            successors. We intend this dedication to be an overt act of
+            relinquishment in perpetuity of all present and future rights to this
+            software under copyright law.
+            
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+            IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+            ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+            OTHER DEALINGS IN THE SOFTWARE.
+            
+            For more information, please refer to <https://unlicense.org>
