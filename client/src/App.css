@@ -1,11 +1,17 @@
 body {
   background-color: rgb(77, 144, 245); 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 150px;
 }
 
 #nav { 
   background-color:hsl(180, 96%, 46%); 
   border-radius: 5px 5px 5px 5px;
+
+ 
 }
 .top {
   border-radius: 30px 30px 30px 30px;
@@ -14,13 +20,20 @@ body {
 
 }
 h1, h3 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  padding-top: 10px;
-  padding-left: 10px;
+  margin-top: 10px;
+
+/*    padding-top: 10px;
+  padding-left: 10px; */
+}
+
+h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-top: -10px;
 }
 
 li, h4, h5, p, button, a, input {
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+
 }
 
 h4, h5, p {
@@ -33,16 +46,21 @@ h4, h5, p {
 
 
 #searchBar {
+  display: grid;
   background-color:hsl(180, 96%, 46%); 
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 10px;
   margin-top: -20px;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
   justify-content: center;
+  align-items: center;
 }
 
 #cards {
-  background-color:hsl(180, 96%, 46%); 
-  border-radius: 2px 2px 2px 2px;
+  background-color:hsl(63, 50%, 92%); 
+  border-radius: 10px 10px 10px 10px;
 }
 
 button {
@@ -50,6 +68,14 @@ button {
   margin: 10px;
   background-color:hsl(180, 96%, 46%); 
   border-style: inset;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.navbar-brand {
+  color: #222;
 }
 
 .App {
@@ -75,4 +101,160 @@ button {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+      background-color: rgb(77, 144, 245); 
+      font-family: 'Montserrat Alternates', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 100px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    body {
+      background-color: rgb(77, 144, 245); 
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 10px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
 }
